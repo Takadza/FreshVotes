@@ -14,7 +14,11 @@ class UserDetailServiceTest {
     public void generateEncryptedPassword(){
 
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+<<<<<<< HEAD
         String rawPassword = "pass";
+=======
+        String rawPassword = "pass123";
+>>>>>>> FreshVotes009-logging_into_freshVotes
         String encodedPassword = encoder.encode(rawPassword);
 
         System.out.println(encodedPassword);

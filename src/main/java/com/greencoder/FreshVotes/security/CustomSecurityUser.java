@@ -2,11 +2,17 @@ package com.greencoder.FreshVotes.security;
 
 import com.greencoder.FreshVotes.domain.User;
 import org.springframework.security.core.userdetails.UserDetails;
+<<<<<<< HEAD
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 
+=======
+
+import java.util.Set;
+
+>>>>>>> FreshVotes009-logging_into_freshVotes
 public class CustomSecurityUser extends User implements UserDetails {
 
 
