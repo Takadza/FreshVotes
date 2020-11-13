@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Fresh Vote Login</title>
-</head>
-<body>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous" ></script>
+    <script type="text/javascript">
+        $(function(){
 
+        $("#createAccount").click(function(){
+
+        window.location.href = "/register";
+
+        });
+
+
+        });
+    </script>
+</head>
+
+<body>
 
 <div th:fragment="content">
     <form name="f" th:action="@{/login}" method="post">
@@ -24,9 +40,13 @@
             <input type="password" id="password" name="password"/>
             <div class="form-actions">
                 <button type="submit" class="btn">Log in</button>
+                <button type="button" class="btn" id="createAccount">Create Account</button>
             </div>
+
+
         </fieldset>
     </form>
-
+</div>
 </body>
+
 </html>
